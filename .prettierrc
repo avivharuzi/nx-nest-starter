@@ -1,0 +1,19 @@
+{
+  "singleQuote": true,
+  "importOrder": [
+    "^node:(.*)$",
+    "^rxjs(.*)$",
+    "<THIRD_PARTY_MODULES>",
+    "^@nx-nest-starter/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderCaseInsensitive": true,
+  "importOrderParserPlugins": [
+    "typescript",
+    "jsx",
+    "classProperties",
+    "decorators-legacy"
+  ]
+}
