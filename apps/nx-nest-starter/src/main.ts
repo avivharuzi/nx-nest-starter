@@ -7,7 +7,7 @@ import {
 
 import { AppModule } from './app/app.module';
 
-const bootstrap = async (): Promise<void> => {
+(async (): Promise<void> => {
   const app = await NestFactory.create<NestFastifyApplication>(
     AppModule,
     new FastifyAdapter()
@@ -24,6 +24,4 @@ const bootstrap = async (): Promise<void> => {
   Logger.log(
     `🚀 Application is running on: http://localhost:${port}/${globalPrefix}`
   );
-};
-
-bootstrap();
+})();
